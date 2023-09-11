@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Mi primera página HTML</title>
+
+
+
+<style>
+
+  h1 {
+
+    color: #3498db;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  }
+
+
+
+  body {
+
+    background-color: #f3a683;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+
+
+  p {
+
+    color: #2ecc71;
+
+    font-size: 16px;
+
+    text-align: center;
+
+  }
+
+
+
+  #nombre-input {
+
+    display: block;
+
+    margin: 20px auto;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    text-align: center;
+
+  }
+
+
+
+  #nombre-btn {
+
+    display: block;
+
+    margin: 10px auto;
+
+    padding: 10px 20px;
+
+    background-color: #e74c3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+  }
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<h1>Bienvenidos a mi página</h1>
+
+<p>Mi primer párrafo</p>
+
+
+
+<input type="text" id="nombre-input" placeholder="Ingrese su nombre">
+
+<button id="nombre-btn">Aceptar</button>
+
+
+
+<script>
+
+  var nombreInput = document.getElementById("nombre-input");
+
+  var nombreBtn = document.getElementById("nombre-btn");
+
+
+
+  nombreBtn.addEventListener("click", function() {
+
+    var nombre = nombreInput.value;
+
+    if (nombre.trim() !== "") {
+
+      window.alert("Gracias, " + nombre + "!");
+
+    } else {
+
+      window.alert("Por favor, ingrese un nombre válido.");
+
+    }
+
+  });
+
+</script>
+
+</body>
+
+
+
+</html>
